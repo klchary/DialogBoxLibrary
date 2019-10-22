@@ -1,0 +1,2 @@
+include ':app', ':ccalertdialog'
+rootProject.name='AlertDialogLibrary'

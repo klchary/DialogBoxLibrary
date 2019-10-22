@@ -1,0 +1,102 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/White"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:id="@+id/main_frame"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/cancel"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1F1E1E"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="12sp"
+            android:text="subtitle"
+            android:textColor="#998FA2"/>
+
+        <View
+            android:background="#C0BFBF"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Message"
+            android:textSize="14sp"
+            android:textColor="#B770FA"/>
+
+        <View
+            android:background="#C0BFBF"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/negative"
+                android:text="Negative"
+                android:layout_alignParentStart="true"
+                android:textColor="#A50101"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/neutral"
+                android:text="Neutral"
+                android:textColor="#285A54"
+                android:textAllCaps="true"
+                android:layout_toStartOf="@id/positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/positive"
+                android:text="Positive"
+                android:textColor="#0FA700"
+                android:textAllCaps="true"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
